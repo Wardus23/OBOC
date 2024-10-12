@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  web1:
+    image: nginx:alpine
+    ports:
+      - "1010:80"  # Первый контейнер на порту 8080
+    restart: always
+
+  web2:
+    image: nginx:alpine
+    ports:
+      - "1020:80"  # Второй контейнер на порту 8081
+    restart: always
